@@ -182,6 +182,19 @@ The website is fully responsive with:
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
+## 🌐 Deploy ke GitHub Pages
+
+Agar situs tampil di GitHub, gunakan GitHub Pages dari folder `docs`:
+
+1. Pastikan folder `docs/` berisi `index.html` dan file `.nojekyll` (sudah dibuat di repo ini).
+2. Commit dan push perubahan ke branch default (mis. `main`).
+3. Buka Settings repo → Pages → Source: "Deploy from a branch".
+4. Pilih Branch: `main` (atau branch default Anda) dan Folder: `/docs`, lalu Save.
+5. Tunggu ±1–3 menit hingga situs aktif di URL: `https://<username>.github.io/<repository>`.
+6. Untuk update tampilan, edit file di `docs/` lalu commit dan push lagi.
+
+Catatan: Endpoint backend (Express.js) tidak berjalan di GitHub Pages. Untuk fungsi API, deploy backend ke layanan terpisah (mis. Render, Railway, Fly.io, Vercel Functions) dan arahkan request dari halaman statis ke URL backend tersebut.
+
 ## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.

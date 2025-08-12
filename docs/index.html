@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kopi - Artisan Coffee Experience</title>
+  <meta name="description" content="Kopi - Situs kopi modern dengan desain elegan dan responsif. Nikmati pengalaman kopi artisan di setiap cangkir." />
+  <meta name="theme-color" content="#111827" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root { --bg: #0b0f17; --card: rgba(255,255,255,0.06); --glass: rgba(255,255,255,0.08);} 
+    html, body { height: 100%; }
+    body { font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji"; background: radial-gradient(1200px 600px at 10% -10%, #1f2937 0%, transparent 60%), radial-gradient(1000px 800px at 100% 0%, #0f172a 0%, transparent 55%), var(--bg); }
+    .glass { background: var(--glass); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border: 1px solid rgba(255,255,255,0.08); }
+    .card { background: var(--card); backdrop-filter: blur(8px); border: 1px solid rgba(255,255,255,0.08); }
+    .gradient-text { background: linear-gradient(135deg, #f59e0b 0%, #f97316 45%, #ef4444 100%); -webkit-background-clip: text; background-clip: text; color: transparent; }
+    .bean { animation: float 6s ease-in-out infinite; opacity: .8; }
+    .bean:nth-child(2){ animation-delay: -2s; }
+    .bean:nth-child(3){ animation-delay: -4s; }
+    @keyframes float { 0%,100%{ transform: translateY(0) } 50%{ transform: translateY(-12px) } }
+  </style>
+</head>
+<body class="text-gray-100">
+  <!-- Nav -->
+  <header class="sticky top-0 z-40 glass">
+    <div class="mx-auto max-w-6xl px-4 py-3 flex items-center justify-between">
+      <a href="#" class="font-extrabold text-xl tracking-tight">Kopi</a>
+      <nav class="hidden md:flex items-center gap-6 text-sm">
+        <a class="hover:text-amber-300 transition" href="#menu">Menu</a>
+        <a class="hover:text-amber-300 transition" href="#newsletter">Newsletter</a>
+        <a class="hover:text-amber-300 transition" href="#contact">Kontak</a>
+        <a class="px-3 py-1.5 rounded-md bg-amber-500/20 text-amber-300 border border-amber-300/30 hover:bg-amber-500/30 transition" href="#order">Order</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="relative overflow-hidden">
+    <div class="absolute inset-0 -z-10">
+      <div class="absolute -top-10 -left-10 w-40 h-40 rounded-full bg-amber-500/20 blur-3xl"></div>
+      <div class="absolute top-1/3 -right-10 w-60 h-60 rounded-full bg-orange-500/10 blur-3xl"></div>
+    </div>
+    <div class="mx-auto max-w-6xl px-4 py-20 md:py-28 grid md:grid-cols-2 gap-10 items-center">
+      <div>
+        <p class="uppercase tracking-widest text-xs text-amber-300/80">Artisan Coffee Experience</p>
+        <h1 class="mt-3 text-4xl md:text-6xl font-extrabold leading-tight"><span class="gradient-text">Kopi</span> dengan sentuhan modern</h1>
+        <p class="mt-5 text-gray-300/90 max-w-xl">Rasakan perpaduan tradisi dan inovasi. Desain elegan, interaksi halus, dan rasa kopi terbaik dalam satu tempat.</p>
+        <div class="mt-8 flex flex-wrap gap-3">
+          <a href="#menu" class="px-5 py-3 rounded-lg bg-amber-400 text-gray-900 font-semibold hover:bg-amber-300 transition">Lihat Menu</a>
+          <a href="#story" class="px-5 py-3 rounded-lg glass hover:bg-white/10 transition">Cerita Kami</a>
+        </div>
+        <div class="mt-10 flex items-center gap-6 text-sm text-gray-300/80">
+          <div class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-green-400"></span> Biji pilihan</div>
+          <div class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-amber-400"></span> Roasting sempurna</div>
+          <div class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-red-400"></span> Disajikan hangat</div>
+        </div>
+      </div>
+      <div class="relative">
+        <div class="absolute -top-6 -right-2 w-20 h-20 rounded-full bg-amber-400/30 blur-2xl"></div>
+        <div class="relative mx-auto max-w-sm glass rounded-2xl p-6">
+          <div class="grid grid-cols-3 gap-3">
+            <div class="bean w-20 h-20 rounded-xl card flex items-center justify-center">☕</div>
+            <div class="bean w-20 h-20 rounded-xl card flex items-center justify-center">🫘</div>
+            <div class="bean w-20 h-20 rounded-xl card flex items-center justify-center">🔥</div>
+            <div class="bean w-20 h-20 rounded-xl card flex items-center justify-center">🥛</div>
+            <div class="bean w-20 h-20 rounded-xl card flex items-center justify-center">❄️</div>
+            <div class="bean w-20 h-20 rounded-xl card flex items-center justify-center">🍫</div>
+          </div>
+          <p class="mt-4 text-center text-sm text-gray-300/80">Animasi ringan untuk nuansa premium</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu -->
+  <section id="menu" class="mx-auto max-w-6xl px-4 py-16 md:py-24">
+    <div class="flex items-end justify-between gap-6">
+      <div>
+        <h2 class="text-2xl md:text-3xl font-bold">Menu Unggulan</h2>
+        <p class="text-gray-300/80 mt-2">Dipilih dan diracik oleh barista berpengalaman</p>
+      </div>
+      <div class="hidden md:flex gap-2 text-xs">
+        <span class="px-3 py-1 rounded-full glass">All</span>
+        <span class="px-3 py-1 rounded-full glass">Espresso</span>
+        <span class="px-3 py-1 rounded-full glass">Filter</span>
+        <span class="px-3 py-1 rounded-full glass">Cold</span>
+      </div>
+    </div>
+    <div class="mt-8 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <article class="card rounded-xl p-5">
+        <div class="flex items-start justify-between">
+          <div>
+            <h3 class="font-semibold">Espresso Signature</h3>
+            <p class="text-sm text-gray-300/80 mt-1">Rich, bold, dengan crema tebal</p>
+          </div>
+          <span class="text-amber-300 font-semibold">Rp 25k</span>
+        </div>
+        <button class="mt-4 w-full px-4 py-2 rounded-lg glass hover:bg-white/10 transition">Tambah ke Keranjang</button>
+      </article>
+      <article class="card rounded-xl p-5">
+        <div class="flex items-start justify-between">
+          <div>
+            <h3 class="font-semibold">Latte Caramel</h3>
+            <p class="text-sm text-gray-300/80 mt-1">Lembut dengan karamel premium</p>
+          </div>
+          <span class="text-amber-300 font-semibold">Rp 32k</span>
+        </div>
+        <button class="mt-4 w-full px-4 py-2 rounded-lg glass hover:bg-white/10 transition">Tambah ke Keranjang</button>
+      </article>
+      <article class="card rounded-xl p-5">
+        <div class="flex items-start justify-between">
+          <div>
+            <h3 class="font-semibold">Cold Brew Orange</h3>
+            <p class="text-sm text-gray-300/80 mt-1">Segar dengan hint citrus</p>
+          </div>
+          <span class="text-amber-300 font-semibold">Rp 30k</span>
+        </div>
+        <button class="mt-4 w-full px-4 py-2 rounded-lg glass hover:bg-white/10 transition">Tambah ke Keranjang</button>
+      </article>
+    </div>
+  </section>
+
+  <!-- Newsletter -->
+  <section id="newsletter" class="mx-auto max-w-6xl px-4 py-16">
+    <div class="glass rounded-2xl p-8 md:p-10">
+      <div class="md:flex items-center justify-between gap-8">
+        <div class="md:max-w-xl">
+          <h3 class="text-xl md:text-2xl font-semibold">Berlangganan Newsletter</h3>
+          <p class="text-gray-300/80 mt-1">Dapatkan kabar rilis menu baru dan promo spesial.</p>
+        </div>
+        <form class="mt-6 md:mt-0 w-full md:max-w-md" onsubmit="event.preventDefault(); subscribe();">
+          <div class="flex gap-2">
+            <input id="email" type="email" required placeholder="Email Anda" class="w-full px-4 py-3 rounded-lg bg-white/5 border border-white/10 outline-none focus:border-amber-400" />
+            <button class="px-5 py-3 rounded-lg bg-amber-400 text-gray-900 font-semibold hover:bg-amber-300 transition">Kirim</button>
+          </div>
+          <p id="msg" class="text-sm mt-2 text-gray-300/80"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="mx-auto max-w-6xl px-4 py-16">
+    <div class="grid md:grid-cols-2 gap-6">
+      <div class="card rounded-2xl p-6">
+        <h3 class="text-lg font-semibold">Kontak</h3>
+        <p class="text-gray-300/80 mt-1">Ada pertanyaan? Kirim pesan ke kami.</p>
+        <form class="mt-6 space-y-3" onsubmit="event.preventDefault(); contact();">
+          <input id="name" class="w-full px-4 py-3 rounded-lg bg-white/5 border border-white/10 outline-none focus:border-amber-400" placeholder="Nama" required />
+          <input id="contactEmail" type="email" class="w-full px-4 py-3 rounded-lg bg-white/5 border border-white/10 outline-none focus:border-amber-400" placeholder="Email" required />
+          <textarea id="message" rows="4" class="w-full px-4 py-3 rounded-lg bg-white/5 border border-white/10 outline-none focus:border-amber-400" placeholder="Pesan" required></textarea>
+          <button class="w-full px-5 py-3 rounded-lg bg-amber-400 text-gray-900 font-semibold hover:bg-amber-300 transition">Kirim Pesan</button>
+        </form>
+      </div>
+      <div class="glass rounded-2xl p-6">
+        <h3 class="text-lg font-semibold">Tentang Kopi</h3>
+        <p class="text-gray-300/80 mt-2">Website ini adalah versi statis untuk ditayangkan di GitHub Pages. Endpoint backend (Express.js) tidak berjalan di GitHub Pages, namun dapat diintegrasikan dengan layanan cloud terpisah.</p>
+        <ul class="mt-4 space-y-2 text-sm text-gray-300/80 list-disc pl-5">
+          <li>Desain modern, responsif, dan ringan</li>
+          <li>Animasian halus untuk nuansa premium</li>
+          <li>Siap di-deploy melalui GitHub Pages (folder <code>docs</code>)</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <footer class="py-10 text-center text-sm text-gray-400/80">
+    <p>© <span id="year"></span> Kopi. Semua hak cipta dilindungi.</p>
+  </footer>
+
+  <script>
+    const byId = (id) => document.getElementById(id);
+    function subscribe(){ byId('msg').textContent = 'Terima kasih! Anda berhasil berlangganan.'; }
+    function contact(){ alert('Pesan terkirim! (Demo statis)'); }
+    byId('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
